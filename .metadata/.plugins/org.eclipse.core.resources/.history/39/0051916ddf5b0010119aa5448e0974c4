@@ -1,0 +1,10 @@
+package testjava;
+
+public class TestUserException {
+	public static void main(String[] arg) {
+		System.out.println("user trying to send a exception");
+		try {
+			throw new ThrowUserEception();
+		}
+	}
+}

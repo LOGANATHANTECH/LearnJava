@@ -1,0 +1,11 @@
+package testjava;
+
+public class ArrayTest {
+	static int[] arr = {1,2,3,4};
+	
+	public static void main(String name[]) {
+		System.out.println(arr);
+	}
+	
+
+}

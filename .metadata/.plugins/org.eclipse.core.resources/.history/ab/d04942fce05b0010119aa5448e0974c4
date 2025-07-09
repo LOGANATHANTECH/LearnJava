@@ -1,0 +1,16 @@
+package testjava;
+
+public class TestUserException {
+	public static void main(String[] arg) {
+		System.out.println("user trying to send a exception");
+		try {
+			throw new ThrowUserEception();
+		}catch(ThrowUserEception e) {
+			e.printStackTrace();
+			System.out.print("user throw exception is succesfully working as we expected");
+		}
+		finally {
+			System.out.println("i an finallyn block");
+		}
+	}
+}

@@ -1,0 +1,20 @@
+package testjava;
+
+public class TestUserException {
+	public static void main(String[] arg) {
+		System.out.println("user trying to send a exception");
+		String exceptionOutput = handleException();
+		System.out.println(exceptionOutput);
+	}
+	
+	private static String handleException() {
+		try {
+			throw new ThrowUserEception();
+		}catch(ThrowUserEception e) {
+			e.printStackTrace();
+			return "user throw exception is succesfully working as we expected";
+		}finally {
+			return "i am finally block" ;
+		}
+	}
+}
